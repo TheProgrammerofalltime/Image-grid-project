@@ -1,36 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <link rel="stylesheet" href="./CSS/grid.css">
-    <link rel="stylesheet" href="./CSS/navbar.css">
-    <style>
-        .container{
-            
-        }
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Project</title>
+<style>
+
+  .border{
+    border: 5px solid grey;
+  }
+
+  .navbar{
+    background-color:rgb(208, 165, 165);
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.image-layout{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, auto);
+
+}
+
+p{
+    display:inline;
+}
+
+a[href="#"]{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+
+.item-1{
+  grid-area:costume-expressions;
+  grid-column: 1/5;
+  grid-row: 1/4;
+}
+.item-2{
+  grid-area:facebook;
+  grid-column: 5/5;
+  grid-row: 1/1;
+}
+.item-3{
+  grid-area:twitter;
+  grid-column: 5/5;
+  grid-row: 2/2;
+}
+.item-4{
+  grid-area:anon-masks;
+  grid-column:5/5;
+  grid-row:3/4;
+}
+.item-5{
+  grid-area:happy-family;
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+.item-6{
+  grid-area:serious-about-makeup;
+  grid-column:3/4;
+  grid-row:4/6;
+}
+.item-7{
+  grid-area:costumes-for-all;
+  grid-column:4/5;
+  grid-row:4/6;
+}
+.item-8{
+  grid-area:pink-hair-girl;
+  grid-column:5/5;
+  grid-row:4/6;
+}
+.item-9{
+  grid-area:oppenheimer;
+  grid-column:1/2;
+  grid-row:6/8;
+}
+
+.item-10{
+  grid-area:super-sale;
+  grid-column:2/4;
+  grid-row:6/7;
+}
+.item-11{
+  grid-area:candy;
+  grid-column:4/5;
+  grid-row:6/7;
+}
+.item-12{
+  grid-area:surprised-person;
+  grid-column:5/5;
+  grid-row:6/7;
+}
+.item-13{
+  grid-area:props;
+  grid-column:1/2;
+  grid-row:8/8;
+}
+.item-14{
+  grid-area:santa;
+  grid-column:2/2;
+  grid-row:7/9;
+}
+.item-15{
+  grid-area:woman;
+  grid-column:3/5;
+  grid-row:7/7;
+}
+.item-16{
+  grid-area:free-shipping;
+  grid-column:5/5;
+  grid-row:7/7;
+}
+.item-17{
+  grid-area:halloween;
+  grid-column:3/3;
+  grid-row:8/8;
+}
+.item-18{
+  grid-area:halloween-2;
+  grid-column:4/4;
+  grid-row:8/8;
+}
+.item-19{
+  grid-area:witches-ghosts-goblins;
+  grid-column: 5/5;
+  grid-row:8/8;
+}
+.item-20{
+  grid-area:mask;
+  grid-column: ;
+  grid-row: ;
+}
+.item-21{
+  grid-area:color-mask-with-stars;
+    grid-column: ;
+    grid-row: ;
+  }
+</style>
+
+
 </head>
 <body>
-      <div class="container">
-        <div class="navbar">
-          <p><a href="#">Enter Site</a></p>
-          <p><a href="#">My Account</a></p>
-          <p><a href="#">Track Orders</a></p>
-          <p><a href="#">Contact Info</a></p>
-        </div>
-        <div class="items">
-        <div class="costume-expressions"><image src="./Images/ce_logo.png" width="800px"></image 400px></div>
-        <div class="facebook"><image src="./Images/ce_image01.png" width="200px"></image></div>
-        <!-- <div class="twitter"><image src="./Images/ce_image02.png"></image></div> 
-         <div class="masks-for-every-face"><image src="./Images/ce_image03.png"></image></div>
-        <div class="item-5"><image src="./Images/ce_image04.png"></image></div>
-        <div class="item-6"><image src="./Images/ce_image05.png"></image></div>
-        <div class="item-7"><image src="./Images/ce_image06.png"></image></div>
-        <div class="item-8"><image src="./Images/ce_image07.png"></image></div> -->
-      </div>
+
+<div class="border">
+  <div class="navbar">
+    <p><a href="#">Enter Site</a></p>
+    <p><a href="#">My Account</a></p>
+    <p><a href="#">Track Orders</a></p>
+    <p><a href="#">Contact Info</a></p>
+  </div>
+  <div class="image-layout">
+    <div class="item-1">
+      <img src="./Images/ce_logo.png" width="100%" height="100%" alt="costume-expressions">
+    </div>
+     <div class="item-2"> 
+      <img src="./Images/ce_image01.png" width="100%" height="100%" alt="facebook">
+    </div>
+    <div class="item-3">
+      <img src="./Images/ce_image02.png" width="100%" height="100%" alt="twitter">
+     </div>
+    <div class="item-4">
+      <img src="./Images/ce_image03.png" width="100%" height="100%" alt="anon-masks">
+    </div>
+    <div class="item-5">
+      <img src="./Images/ce_image04.png" width="100%" height="100%" alt="happy-family">
+    </div>
+    <div class="item-6">
+      <img src="./Images/ce_image05.png" width="100%" height="100%" alt="serious-about-makeup">
+    </div>
+    <div class="item-7">
+      <img src="./Images/ce_image06.png" width="100%" height="100%" alt="costumes-for-all">
+    </div>
+    <div class="item-8">
+      <img src="./Images/ce_image07.png" width="100%" height="100%" alt="pink-hair-girl">
+    </div>
+    <div class="item-9">
+      <img src="./Images/ce_image08.png" width="100%" height="100%" alt="oppenheimer">
+    </div>
+    <div class="item-10">
+      <img src="./Images/ce_image09.png" width="100%" height="100%" alt="super-sale">
+    </div>
+    <div class="item-11">
+      <img src="./Images/ce_image10.png" width="100%" height="100%" alt="candy">
+    </div>
+    <div class="item-12">
+      <img src="./Images/ce_image11.png" width="100%" height="100%" alt="props">
+    </div>
+    <div class="item-13">
+      <img src="./Images/ce_image12.png" width="100%" height="100%" alt="surprised-person">
+    </div>
+    <div class="item-14">
+      <img src="./Images/ce_image13.png" width="100%" height="100%" alt="santa">
+    </div>
+    <div class="item-15">
+      <img src="./Images/ce_image14.png" width="100%" height="100%" alt="woman">
+    </div>
+     <div class="item-16"> 
+      <img src="./Images/ce_image15.png" width="100%" height="100%" alt="super-sale">
+    </div>
+    <div class="item-17">
+      <img src="./Images/ce_image16.png" width="100%" height="100%" alt="super-sale">
+    </div>
+    <div class="item-18">
+      <img src="./Images/ce_image17.png" width="100%" height="100%" alt="super-sale">
+    </div>
+    <div class="item-19">
+      <img src="./Images/ce_image18.png" width="100%" height="100%" alt="super-sale">
+    
+    </div>
+</div>
+
 </body>
 </html>
-
-        
