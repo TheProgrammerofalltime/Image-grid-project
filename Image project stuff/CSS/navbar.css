@@ -7,8 +7,3 @@ p{
     display: inline;
 }
 
-.navbar{
-    grid-area:navbar;
-    background-color:rgb(208, 165, 165);
-    padding: 10px;
-}

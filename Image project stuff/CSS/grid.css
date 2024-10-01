@@ -1,4 +1,5 @@
 .container{
+    border: 5px solid gray;
     display:grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -14,6 +15,11 @@
                         "mask stars stars"
 }
 
+.navbar{
+    grid-area:navbar;
+    background-color:rgb(208, 165, 165);
+    padding: 10px;
+}
 .item-1{grid-area:costume-expressions;}
 .item-2{grid-area:facebook;}
 .item-3{grid-area:twitter;}
